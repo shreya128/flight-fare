@@ -23,7 +23,7 @@ import pandas as pd
 # In[4]:
 
 
-app = Flask(__name__)
+api = Flask(__name__)
 model = pickle.load(open("flight_rf.pkl", "rb"))
 
 
@@ -386,7 +386,7 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    api.run(debug=True)
 
 
 # In[ ]:
